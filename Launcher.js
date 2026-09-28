@@ -4,13 +4,13 @@ if (!document.getElementById("lchRootBox")) {
   var EDUXBOX_URL = "https://raw.githubusercontent.com/minhReal/mainM/refs/heads/main/E.js";
   var LCH_VERSION = "v26.1.1a";
 
-  var LCH_CHANGELOG = 
-    { date: "2026-08-20", tag: "LMS",      version: "v26.1.1", note: "Đổi chức năng và tên của Tab A.I thành Plugins" },
-    { date: "2026-09-15", tag: "LAUNCHER", version: "v26.1.1a", note: "vừa sửa lại link" },
+  var LCH_CHANGELOG = [
+    { date: "2026-09-28", tag: "LMS",      version: "v26.1.1", note: "Đổi chức năng và tên của Tab A.I thành Plugins" },
+    { date: "2026-09-28", tag: "LAUNCHER", version: "v26.1.1a", note: "vừa sửa lại link" },
     { date: "2026-09-15", tag: "LAUNCHER", version: "v26.1.1", note: "vừa sửa lại link" },
     { date: "2026-08-25", tag: "LAUNCHER", version: "v26.1.0", note: "Newly released" },
-//    { date: "2026-08-20", tag: "LMS",      version: "v26.1.0", note: "" },
-//    { date: "2026-08-18", tag: "EDUXBOX",  version: "v26.1.0", note: "" }
+//  { date: "2026-08-20", tag: "LMS",      version: "v26.1.0", note: "" },
+//  { date: "2026-08-18", tag: "EDUXBOX",  version: "v26.1.0", note: "" }
   ];
 
  // --- Things ---
@@ -181,7 +181,7 @@ if (!document.getElementById("lchRootBox")) {
     fetch(EDUXBOX_URL)
       .then(res => { if(!res.ok) throw new Error('Unable to fetch JS file (' + res.status + ')'); return res.text(); })
       .then(js => { injectAsRealScript(js); statusEl.textContent = 'Executed: ' + label; })
-      .catch(err => { statusEl.textContent = '??Error: ' + err.message; console.error('Error khi load script:', err); })
+      .catch(err => { statusEl.textContent = 'Error: ' + err.message; console.error('Error khi load script:', err); })
       .finally(() => { btn.disabled = false; });
   };
 
