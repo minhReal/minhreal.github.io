@@ -1,14 +1,16 @@
 if (!document.getElementById("lchRootBox")) {
 
-  var LMS360_URL = "https://raw.githubusercontent.com/minhReal/mainM/refs/heads/main/L2.js";
+  var LMS360_URL = "https://raw.githubusercontent.com/minhReal/mainM/refs/heads/main/L.js";
   var EDUXBOX_URL = "https://raw.githubusercontent.com/minhReal/mainM/refs/heads/main/E.js";
-  var LCH_VERSION = "v26.1.1";
+  var LCH_VERSION = "v26.1.1a";
 
-  var LCH_CHANGELOG = [
-    { date: "2026-09-15", tag: "LAUNCHER", version: "v26.1.1", note: "Edit lms360 link" },
+  var LCH_CHANGELOG = 
+    { date: "2026-08-20", tag: "LMS",      version: "v26.1.1", note: "Đổi chức năng và tên của Tab A.I thành Plugins" },
+    { date: "2026-09-15", tag: "LAUNCHER", version: "v26.1.1a", note: "vừa sửa lại link" },
+    { date: "2026-09-15", tag: "LAUNCHER", version: "v26.1.1", note: "vừa sửa lại link" },
     { date: "2026-08-25", tag: "LAUNCHER", version: "v26.1.0", note: "Newly released" },
-//    { date: "2026-08-20", tag: "LMS",      version: "v26.1.0",        note: "" },
-//    { date: "2026-08-18", tag: "EDUXBOX",  version: "v26.1.0",        note: "" }
+//    { date: "2026-08-20", tag: "LMS",      version: "v26.1.0", note: "" },
+//    { date: "2026-08-18", tag: "EDUXBOX",  version: "v26.1.0", note: "" }
   ];
 
  // --- Things ---
